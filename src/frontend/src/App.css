@@ -1,0 +1,139 @@
+body {
+  background-color: #85dcb0;
+}
+
+.container {
+  margin: 1rem 4rem;
+}
+
+.decks {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.deck {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 35%;
+  background-color: #edf5d1;
+  color: #379683;
+  padding: 1rem;
+  height: 200px;
+  cursor: pointer;
+  border: none;
+}
+
+.deck:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.add-button {
+  text-align: center;
+  font-size: 50px;
+  position: fixed;
+  margin: 25px;
+  right: 0;
+  bottom: 0;
+  padding: 12px 25px;
+  border-radius: 50%;
+  background-color: #379683;
+  border: none;
+}
+
+.add-button:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.create-form-container {
+  border: none;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #379683;
+  align-items: center;
+  height: 90vh;
+  width: 40%;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  width: 50%;
+  flex: 3;
+}
+
+.create-button {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #85dcb0;
+}
+
+.create-button:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.name-input {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 22px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  height: 150px;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+  transform-style: preserve-3d;
+  transition: 150ms;
+  cursor: pointer;
+}
+
+.card:hover {
+  --translate-y: -2px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
