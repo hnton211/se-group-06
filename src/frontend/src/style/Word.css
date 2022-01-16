@@ -1,0 +1,11 @@
+.create-word{
+    height: 500px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Dongle";
+    font-size: 2rem;
+}
+
+.create-word h1{
+    height: 40px;
+}

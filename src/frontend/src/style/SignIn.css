@@ -7,16 +7,18 @@
 
 .form-wrapper {
   overflow: hidden;
-  max-width: 390px;
+  width: 390px;
   background-color: #379683;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .form-wrapper .title-form {
   display: flex;
   width: 200%;
+  color: #ffd9ce;
 }
 
 .form-wrapper .title {
@@ -42,7 +44,7 @@
 .slide-controls .slide {
   height: 100%;
   width: 100%;
-  color: #fff;
+  color: #EAB464;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -80,11 +82,11 @@ input[type="radio"] {
 }
 
 #signup:checked ~ label.login {
-  color: #000;
+  color: #ffd9ce;
 }
 
 #login:checked ~ label.signup {
-  color: #000;
+  color: #ffd9ce;
 }
 
 #login:checked ~ label.login {

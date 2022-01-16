@@ -1,0 +1,29 @@
+.group-level-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 2rem;
+    
+}
+
+.level-button{
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    margin-left: 2rem;
+    cursor: pointer;
+    background-color: #00F5C8;
+    border: 1px solid #00F5C8;
+    font-weight: 600;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+}
+
+.level-button:hover{
+    background-color: #D9FFF8;
+}
+
+.create-button:hover{
+    background-color: #00F5C8;
+}

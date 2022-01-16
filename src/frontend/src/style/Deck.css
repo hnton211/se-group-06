@@ -1,0 +1,58 @@
+.card-container{
+    background-color: blanchedalmond;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 2rem;  
+    box-shadow: 0 15px 25px #bbb;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+  }
+  
+  .card-circle{
+    position: relative;
+     text-align: center;
+     height: 100%;
+     width: 100%;
+     color: coral;
+     background: #E8E1EF;
+     clip-path: ellipse(250px 80px at 30% 10%);
+     border-radius: 40px;
+  }
+  
+  .card-circle h2 {
+      font-size: 3.5rem;
+      padding: 30px 0;
+  }
+  
+  .card-content{
+      position: absolute;
+      top: 5rem;
+      left: 2rem;
+      right: 2rem;
+      font-weight: bold;
+      text-align: center;
+      
+  }
+  
+  .card-content p{
+      color: #8D86C9;
+      font-size: 3rem;
+  }
+  
+  .create-deck{
+    margin-bottom: 2rem;
+    font-family: "Dongle";
+    font-size: 2rem;
+}
+
+.create-deck h1{
+    height: 40px;
+}
+.card-container:hover{
+    transform: scale(1.2);
+}
+  
+

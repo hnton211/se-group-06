@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { createWord } from "../apis/flashcardModel";
+import "../style/Word.css"
 
 const CreateWord = () => {
   const { id } = useParams();
@@ -18,19 +19,17 @@ const CreateWord = () => {
 
   return (
     <div className="flexbox-container">
-      <div className="create-form-container">
+      <div className="create-form-container create-word">
         <h1
           style={{
             color: "#edf5d1",
-            marginTop: "100px",
-            flex: "1",
           }}
         >
           Create New Word
         </h1>
         <form className="create-form">
           <label
-            style={{ margin: "10px 0px", fontSize: "25px", color: "#edf5d1" }}
+            style={{ fontSize: "36px", color: "#edf5d1" }}
             htmlFor="name"
           >
             Word
@@ -43,7 +42,7 @@ const CreateWord = () => {
             id="name"
           />
           <label
-            style={{ margin: "10px 0px", fontSize: "25px", color: "#edf5d1" }}
+            style={{ fontSize: "36px", color: "#edf5d1" }}
             htmlFor="meaning"
           >
             Meaning
@@ -56,7 +55,7 @@ const CreateWord = () => {
             id="meaning"
           />
           <label
-            style={{ margin: "10px 0px", fontSize: "25px", color: "#edf5d1" }}
+            style={{ fontSize: "36px", color: "#edf5d1" }}
             htmlFor="example"
           >
             Example
@@ -79,6 +78,9 @@ const CreateWord = () => {
               className="create-button"
               onClick={handleClick}
               type="submit"
+              style={{
+                cursor: "pointer"
+              }}
             >
               Create
             </button>

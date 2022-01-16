@@ -74,7 +74,7 @@ export default function SignIn() {
     });
   }, []);
   return (
-    <div>
+    <>
       <div className="signIn-form">
         <div className="form-wrapper">
           <div className="title-form">
@@ -163,24 +163,6 @@ export default function SignIn() {
                     onChange={handleAccountSignUp}
                   />
                 </div>
-                <div className="form-field">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    required
-                    id="firstname"
-                    onChange={handleAccountSignUp}
-                  />
-                </div>
-                <div className="form-field">
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    required
-                    id="lastname"
-                    onChange={handleAccountSignUp}
-                  />
-                </div>
                 {errorSignUp && <h4 className="error">{errorSignUp}</h4>}
                 <div className="form-field btn">
                   <div className="btn-layer"></div>
@@ -191,6 +173,6 @@ export default function SignIn() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

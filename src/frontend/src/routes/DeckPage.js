@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { getWordsFromDeck, pushToDeck } from "../apis/flashcardModel";
 import Flashcard from "../components/DeckPage/Flashcard";
+import "../style/levelBtn.css"
 
 export default function DeckPage() {
   let history = useHistory();
@@ -32,7 +33,7 @@ export default function DeckPage() {
         {wordList.length > 0 && <Flashcard flashcard={wordList[0]} />}
       </div>
       {wordList.length > 0 && (
-        <div>
+        <div className="group-level-button">
           {" "}
           <button className="level-button" onClick={() => handleLevelSubmit(1)}>
             Easy
@@ -48,7 +49,11 @@ export default function DeckPage() {
           </button>
         </div>
       )}
-      <button title="Add new word" className="add-button" onClick={handleClick}>
+      <button title="Add new word" className="add-button" onClick={handleClick}
+        style={{
+          cursor: "pointer",
+        }}
+      >
         +
       </button>
     </div>

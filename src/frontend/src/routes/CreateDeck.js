@@ -14,19 +14,17 @@ const CreateDeck = () => {
 
   return (
     <div className="flexbox-container">
-      <div className="create-form-container">
+      <div className="create-form-container create-deck">
         <h1
           style={{
             color: "#edf5d1",
-            marginTop: "100px",
-            flex: "1",
           }}
         >
           Create New Deck
         </h1>
         <form className="create-form">
           <label
-            style={{ margin: "10px 0px", fontSize: "25px", color: "#edf5d1" }}
+            style={{ marginTop: "2rem",fontSize: "36px", color: "#edf5d1" }}
             htmlFor="name"
           >
             Name
@@ -49,6 +47,9 @@ const CreateDeck = () => {
               className="create-button"
               onClick={handleCreate}
               title="create"
+              style={{
+                cursor: "pointer"
+              }}
             >
               Create
             </button>
