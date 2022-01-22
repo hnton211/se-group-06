@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Redirect to="/home" />
+          <Redirect to="/sign-in" />
         </Route>
         <Route path="/sign-in">
           <SignIn />

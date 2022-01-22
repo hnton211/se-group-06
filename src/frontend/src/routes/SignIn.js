@@ -30,6 +30,9 @@ export default function SignIn() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if(input.username.includes("!")) 
+      return setError("Invalid input")
+    
     const data = await signInService(input);
     if (data.success) {
       history.push("/home", { token: data.token });
